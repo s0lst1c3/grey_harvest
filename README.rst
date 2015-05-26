@@ -6,6 +6,9 @@ speed and reliability. Can be used as both a python module and a
 command line utility. When run as a command line utility, proxies
 are sent to stdout. When run as a module, it returns a generator.
 
+Check out the project on PyPi_.
+.. _PyPi: http://www.python.org/
+
 Key Features
 ------------
 - Quickly and easily generate a list of reliable http/https proxies
