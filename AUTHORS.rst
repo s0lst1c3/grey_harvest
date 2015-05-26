@@ -1,7 +1,7 @@
 Credits
 =======
 
-"pem" is written and maintained by John 's0lst1c3' Ryan.
+"grey_harvest" is written and maintained by John 's0lst1c3' Ryan.
 
 Contributors
 ------------
