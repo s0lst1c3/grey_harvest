@@ -1,0 +1,6 @@
+requests
+pyOpenSSL
+ndg-httpsclient
+pyasn1
+beautifulsoup4
+lxml
