@@ -1,14 +1,54 @@
-from distutils.core import setup
-version = '0.1'
+import os
+
+from setuptools import setup
+
+def read(*paths):
+	with open(os.path.join(*paths), 'r') as fd:
+		return fd.read()
+
+version = '0.1.0'
 setup(
 	name = 'grey_harvest',
-	packages = ['grey_harvest'],
-	version = version,
 	description = 'Generate lists of free, reliable http(s) proxies.',
-	author = 's0lst1c3',
-	author_email = 'contact@solstice.me',
+	long_description=(read('README.rst')+'\n\n'+\
+					  read('HISTORY.rst')+'\n\n'+\
+					  read('AUTHORS.rst')+'\n\n'),
 	url = 'https://github.com/s0lst1c3/grey_harvest',
-	download_url 'https://github.com/s0lst1c3/grey_harvest/%s' % (version),
-	keywords = [ 'proxy', 'proxies', 'http', 'https', 'web' ]
-	classifiers = [],
+	license = 'MIT',
+	author = 'John "s0lst1c3" Ryan',
+	author_email = 'contact@solstice.me',
+	py_modules = ['grey_harvest'],
+	include_package_data = True,
+	install_requires = [
+		'requests',
+		'pyOpenSSL',
+		'ndg-httpsclient',
+		'pyasn1',
+		'beautifulsoup4',
+		'lxml',
+	],
+	classifiers = [
+		'Development Status :: 3 - Alpha',
+		'Environment :: Console',
+		'Intended Audience :: Developers',
+		'Intended Audience :: Science/Research',
+		'Intended Audience :: System Administrators',
+		'License :: OSI Approved :: MIT License',
+		'Natural Language :: English',
+		'Operating System :: MacOS :: MacOS X',
+		'Operating System :: POSIX',
+		'Operating System :: POSIX :: Linux',
+		'Programming Language :: Python :: 2.7',
+		'Topic :: Internet :: Proxy Servers',
+		'Topic :: Internet :: WWW/HTTP',
+		'Topic :: Security',
+		'Topic :: Software Development :: Libraries :: Python Modules',
+		'Topic :: System :: Systems Administration',
+		'Topic :: Utilities',
+	],
+	entry_points = {
+		'console_scripts' : [
+			'grey_harvest=grey_harvest:main',
+		],
+	},
 )
