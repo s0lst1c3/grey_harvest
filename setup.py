@@ -6,9 +6,9 @@ def read(*paths):
 	with open(os.path.join(*paths), 'r') as fd:
 		return fd.read()
 
-version = '0.1.0'
 setup(
 	name = 'grey_harvest',
+	version = '0.1.0',
 	description = 'Generate lists of free, reliable http(s) proxies.',
 	long_description=(read('README.rst')+'\n\n'+\
 					  read('HISTORY.rst')+'\n\n'+\

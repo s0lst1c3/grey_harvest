@@ -10,6 +10,11 @@
 '''              application (see README.md).
 """
 
+__version__   = '0.1.0'
+__author__    = 'John "s0lst1c3" Ryan'
+__license__   = 'MIT'
+__copyright__ = 'Copyright (c) 2015 John Ryan'
+
 import requests
 import socket
 import sys
