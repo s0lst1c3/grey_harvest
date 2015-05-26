@@ -8,7 +8,7 @@ def read(*paths):
 
 setup(
 	name = 'grey_harvest',
-	version = '0.1.0',
+	version = '0.1.1',
 	description = 'Generate lists of free, reliable http(s) proxies.',
 	long_description=(read('README.rst')+'\n\n'+\
 					  read('HISTORY.rst')+'\n\n'+\
@@ -22,10 +22,9 @@ setup(
 	install_requires = [
 		'requests',
 		'pyOpenSSL',
-		'ndg-httpsclient',
-		'pyasn1',
 		'beautifulsoup4',
 		'lxml',
+		'argparse',
 	],
 	classifiers = [
 		'Development Status :: 3 - Alpha',
