@@ -54,8 +54,9 @@ within Ukraine, Hong Kong, and the United States, we'd use this::
 
 We can use the -p flag to filter for ports running on specific ports:
 
-	# use the -p flag to only use proxies that run on port 80
-	grey_harvest -n 10 -p 80
+	# the -p flag to only use proxies that run on port 80
+	grey_harvest -p 80 -n 10
+
 
 We can deny proxies located within specific countries by using
 the -d flag. Proxies located within China are blocked by default
