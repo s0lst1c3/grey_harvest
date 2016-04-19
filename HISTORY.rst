@@ -3,6 +3,10 @@
 History
 =======
 
+0.1.4 (2016-04-19)
+------------------
+- Users can now filter for proxies running on specific ports
+
 0.1.3 (2015-05-26)
 ------------------
 - Added documentation
