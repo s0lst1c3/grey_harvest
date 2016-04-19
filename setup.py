@@ -16,8 +16,8 @@ setup(
 	url = 'https://github.com/s0lst1c3/grey_harvest',
 	download_url = 'https://github.com/s0lst1c3/grey_harvest/tarball/0.1.2',
 	license = 'MIT',
-	author = 'John "s0lst1c3" Ryan',
-	author_email = 'contact@solstice.me',
+	author = 'Gabriel "s0lst1c3" Ryan',
+	author_email = 'gabriel@solstice.me',
 	py_modules = ['grey_harvest'],
 	include_package_data = True,
 	install_requires = [
