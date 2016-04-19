@@ -51,6 +51,12 @@ within Ukraine, Hong Kong, and the United States, we'd use this::
 	# use the -a flag to filter by country
 	grey_harvest -a "United States" "Hong Kong" Ukraine -n 10
 
+
+We can use the -p flag to filter for ports running on specific ports:
+
+	# use the -p flag to only use proxies that run on port 80
+	grey_harvest -n 10 -p 80
+
 We can deny proxies located within specific countries by using
 the -d flag. Proxies located within China are blocked by default
 as they are often located behind the Great Firewall, and as such
@@ -83,10 +89,6 @@ check out how easily we can generate a list of 20 proxies::
 That's it. We now have 20 http/https proxies ready to go.
 		
 
-The grey_harvest library provides two classes - Proxy
-and GreyHarvester:
-
-# todo
 
 
 
