@@ -52,7 +52,7 @@ within Ukraine, Hong Kong, and the United States, we'd use this::
 	grey_harvest -a "United States" "Hong Kong" Ukraine -n 10
 
 
-We can use the -p flag to filter for ports running on specific ports:
+We can use the -p flag to filter for ports running on specific ports::
 
 	# the -p flag to only use proxies that run on port 80
 	grey_harvest -p 80 -n 10
