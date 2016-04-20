@@ -3,6 +3,10 @@
 History
 =======
 
+0.1.5 (2016-04-20)
+------------------
+- Fixed connections errors that occur when specifying custom test domain
+
 0.1.4 (2016-04-19)
 ------------------
 - Users can now filter for proxies running on specific ports
