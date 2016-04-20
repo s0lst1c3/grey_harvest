@@ -231,7 +231,7 @@ def setup(parser):
     )
     parser.add_argument('-D', '--test-domain', 
                     dest='test_domain',
-                    nargs=1,
+                    type=str,
                     metavar='<test_domain>',
                     default=TEST_DOMAIN,
                     required=False,
