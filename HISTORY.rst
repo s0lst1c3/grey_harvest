@@ -2,6 +2,9 @@
 
 History
 =======
+0.1.6 (2016-05-16)
+------------------
+- modified some line to get rid of warning or possible errors. ready for python 3
 
 0.1.5 (2016-04-20)
 ------------------
