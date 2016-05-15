@@ -6,4 +6,6 @@ Credits
 Contributors
 ------------
 
-Please add yourself here alphabetically when you submit your first pull request.
+
+Zhihua "magicknight" Liang
+
