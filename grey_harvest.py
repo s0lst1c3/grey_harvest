@@ -112,8 +112,8 @@ class GreyHarvester(object):
     
         ''' request the xml object '''
         proxy_xml = requests.get(ajax_endpoint)
-        
-        root = etree.XML(str(proxy_xml.text))
+        print(proxy_xml.content)
+        root = etree.XML(proxy_xml.content)
         quote = root.xpath('quote')[0]
         
         ''' extract the raw text from the body of the quote tag '''
@@ -183,7 +183,7 @@ class GreyHarvester(object):
         raw_html = response.text
     
         ''' convert raw html into BeautifulSoup object '''
-        soup = BeautifulSoup(raw_html)
+        soup = BeautifulSoup(raw_html, 'lxml')
 
         for url in soup.select('table tr td table tr td a'):
             if 'elite #' in url.text:
@@ -280,7 +280,7 @@ def main():
     for proxy in harvester.run():
         if count >= configs['num_proxies']:
             break
-        print proxy
+        print(proxy)
         count += 1
 
 if __name__ == '__main__':
